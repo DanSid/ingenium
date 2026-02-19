@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-parchment-100 text-ink-800 font-body;
+}
+
+/* Subtle “paper + drafting grid” background */
+.bg-parchment-grid {
+  background-color: #f5f1e7;
+  background-image:
+    radial-gradient(circle at 20% 10%, rgba(255,255,255,0.75), rgba(255,255,255,0) 45%),
+    radial-gradient(circle at 85% 15%, rgba(255,255,255,0.55), rgba(255,255,255,0) 50%),
+    linear-gradient(to right, rgba(50,60,70,0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(50,60,70,0.06) 1px, transparent 1px);
+  background-size: auto, auto, 44px 44px, 44px 44px;
+}
+
+/* Soft vignette + crisp section dividers */
+.section-divider {
+  @apply relative;
+}
+.section-divider::before {
+  content: '';
+  @apply absolute left-0 right-0 top-0 h-px bg-ink-900/10;
+}
+.section-divider::after {
+  content: '';
+  @apply absolute left-0 right-0 bottom-0 h-px bg-ink-900/10;
+}
+
+/* Nice selection */
+::selection {
+  background: rgba(11, 61, 145, 0.20);
+}
