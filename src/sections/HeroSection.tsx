@@ -27,7 +27,7 @@ export default function HeroSection({ onInitiate }: { onInitiate: () => void }) 
 
               <div className="mt-7 flex flex-wrap items-center gap-3">
                 <Button onClick={onInitiate}>{HERO.primaryCta}</Button>
-                <Button variant="ghost" onClick={() => document.getElementById('impact')?.scrollIntoView({ behavior: 'smooth' })}>
+                <Button variant="ghost" onClick={() => document.getElementById('integrity')?.scrollIntoView({ behavior: 'smooth' })}>
                   {HERO.secondaryCta}
                 </Button>
               </div>
@@ -37,7 +37,7 @@ export default function HeroSection({ onInitiate }: { onInitiate: () => void }) 
               <div className="text-[12px] tracking-[0.26em] text-ink-700/70 font-semibold">LINGUISTIC ARCHITECTURE</div>
               <div className="mt-3 font-display text-[30px] leading-[1.12] text-ink-900">
                 <MorphingInWord
-                  words={['Insight', 'Influence', 'Integrity', 'Impact', 'Ingenium']}
+                  words={['sight', 'fluence', 'tegrity', 'genium']}
                   intervalMs={2300}
                   className=""
                 />

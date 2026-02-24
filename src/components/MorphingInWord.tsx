@@ -19,7 +19,7 @@ export default function MorphingInWord({
   return (
     <span className={className} aria-label={`In ${safeWords[i]}`}>
       <span className="inline-block font-semibold">In</span>
-      <span className="inline-block w-[0.2ch]" />
+      <span className="inline-block w-[0.05ch]" />
       <span className="relative inline-block align-baseline">
         <AnimatePresence mode="wait" initial={false}>
           <motion.span
